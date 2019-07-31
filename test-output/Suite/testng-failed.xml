@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="browser" value="chrome"/>
+  <test name="Test_firefox">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="Scripts.Validlogin"/>
+      <class name="Scripts.Luxire2main"/>
+      <class name="Scripts.Luxire1main"/>
+    </classes>
+  </test> <!-- Test_firefox -->
+  <test name="Test_chrome">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="Scripts.Validlogin"/>
+      <class name="Scripts.Luxire2main"/>
+      <class name="Scripts.Luxire1main"/>
+    </classes>
+  </test> <!-- Test_chrome -->
+  <test name="Test_chrome(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="Scripts.Validlogin$testValidlogin">
+        <methods>
+          <include name="testValidLogin"/>
+          <include name="openAppln"/>
+          <include name="openAppln"/>
+          <include name="close_App"/>
+          <include name="close_App"/>
+        </methods>
+      </class> <!-- Scripts.Validlogin$testValidlogin -->
+      <class name="Scripts.Luxire2main">
+        <methods>
+          <include name="openAppln"/>
+          <include name="openAppln"/>
+          <include name="close_App"/>
+          <include name="close_App"/>
+        </methods>
+      </class> <!-- Scripts.Luxire2main -->
+      <class name="Scripts.Luxire1main">
+        <methods>
+          <include name="openAppln"/>
+          <include name="openAppln"/>
+          <include name="close_App"/>
+          <include name="close_App"/>
+        </methods>
+      </class> <!-- Scripts.Luxire1main -->
+    </classes>
+  </test> <!-- Test_chrome(failed) -->
+  <test name="Test_firefox(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="Scripts.Validlogin$testValidlogin">
+        <methods>
+          <include name="testValidLogin"/>
+          <include name="openAppln"/>
+          <include name="openAppln"/>
+          <include name="close_App"/>
+          <include name="close_App"/>
+        </methods>
+      </class> <!-- Scripts.Validlogin$testValidlogin -->
+      <class name="Scripts.Luxire2main">
+        <methods>
+          <include name="openAppln"/>
+          <include name="openAppln"/>
+          <include name="testLuxire2"/>
+          <include name="close_App"/>
+          <include name="close_App"/>
+        </methods>
+      </class> <!-- Scripts.Luxire2main -->
+      <class name="Scripts.Luxire1main">
+        <methods>
+          <include name="openAppln"/>
+          <include name="openAppln"/>
+          <include name="close_App"/>
+          <include name="close_App"/>
+        </methods>
+      </class> <!-- Scripts.Luxire1main -->
+    </classes>
+  </test> <!-- Test_firefox(failed) -->
+</suite> <!-- Failed suite [Suite] -->

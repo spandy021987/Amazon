@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="3" total="6" passed="3">
+  <reporter-output>
+    <line>
+      <![CDATA[testValidLogin]]>
+    </line>
+    <line>
+      <![CDATA[testValidLogin]]>
+    </line>
+    <line>
+      <![CDATA[testLuxire2]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="220888" started-at="2019-07-31T11:56:18Z" finished-at="2019-07-31T11:59:59Z">
+    <groups>
+    </groups>
+    <test name="Test_chrome" duration-ms="184854" started-at="2019-07-31T11:56:18Z" finished-at="2019-07-31T11:59:23Z">
+      <class name="Scripts.Luxire1main">
+        <test-method status="PASS" signature="openAppln(java.lang.String)[pri:0, instance:Scripts.Luxire1main@61443d8f]" name="openAppln" is-config="true" duration-ms="35715" started-at="2019-07-31T17:27:32Z" finished-at="2019-07-31T17:28:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openAppln -->
+        <test-method status="PASS" signature="testValidLogin()[pri:0, instance:Scripts.Luxire1main@61443d8f]" name="testValidLogin" duration-ms="73884" started-at="2019-07-31T17:28:08Z" finished-at="2019-07-31T17:29:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidLogin -->
+        <test-method status="PASS" signature="close_App(org.testng.ITestResult)[pri:0, instance:Scripts.Luxire1main@61443d8f]" name="close_App" is-config="true" duration-ms="1312" started-at="2019-07-31T17:29:22Z" finished-at="2019-07-31T17:29:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testValidLogin status=SUCCESS method=Luxire1main.testValidLogin()[pri:0, instance:Scripts.Luxire1main@61443d8f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close_App -->
+      </class> <!-- Scripts.Luxire1main -->
+      <class name="Scripts.Luxire2main">
+        <test-method status="PASS" signature="openAppln(java.lang.String)[pri:0, instance:Scripts.Luxire2main@66048bfd]" name="openAppln" is-config="true" duration-ms="31909" started-at="2019-07-31T17:26:57Z" finished-at="2019-07-31T17:27:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openAppln -->
+        <test-method status="PASS" signature="testLuxire2()[pri:0, instance:Scripts.Luxire2main@66048bfd]" name="testLuxire2" duration-ms="2895" started-at="2019-07-31T17:27:28Z" finished-at="2019-07-31T17:27:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLuxire2 -->
+        <test-method status="PASS" signature="close_App(org.testng.ITestResult)[pri:0, instance:Scripts.Luxire2main@66048bfd]" name="close_App" is-config="true" duration-ms="886" started-at="2019-07-31T17:27:31Z" finished-at="2019-07-31T17:27:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLuxire2 status=SUCCESS method=Luxire2main.testLuxire2()[pri:0, instance:Scripts.Luxire2main@66048bfd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close_App -->
+      </class> <!-- Scripts.Luxire2main -->
+      <class name="Scripts.Validlogin$testValidlogin">
+        <test-method status="PASS" signature="openAppln(java.lang.String)[pri:0, instance:Scripts.Validlogin$testValidlogin@591f989e]" name="openAppln" is-config="true" duration-ms="33373" started-at="2019-07-31T17:26:18Z" finished-at="2019-07-31T17:26:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openAppln -->
+        <test-method status="FAIL" signature="testValidLogin()[pri:0, instance:Scripts.Validlogin$testValidlogin@591f989e]" name="testValidLogin" duration-ms="1" started-at="2019-07-31T17:26:52Z" finished-at="2019-07-31T17:26:52Z">
+          <exception class="java.lang.Error">
+            <message>
+              <![CDATA[Unresolved compilation problems: 
+	Workbook cannot be resolved to a type
+	WorkbookFactory cannot be resolved
+	Cell cannot be resolved to a type
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Error: Unresolved compilation problems: 
+	Workbook cannot be resolved to a type
+	WorkbookFactory cannot be resolved
+	Cell cannot be resolved to a type
+
+	at generics.Excel1.getcellvalue(Excel1.java:17)
+	at Scripts.Validlogin$testValidlogin.testValidLogin(Validlogin.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Error -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidLogin -->
+        <test-method status="PASS" signature="close_App(org.testng.ITestResult)[pri:0, instance:Scripts.Validlogin$testValidlogin@591f989e]" name="close_App" is-config="true" duration-ms="4864" started-at="2019-07-31T17:26:52Z" finished-at="2019-07-31T17:26:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testValidLogin status=FAILURE method=Validlogin$testValidlogin.testValidLogin()[pri:0, instance:Scripts.Validlogin$testValidlogin@591f989e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[testValidLogin]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- close_App -->
+      </class> <!-- Scripts.Validlogin$testValidlogin -->
+    </test> <!-- Test_chrome -->
+    <test name="Test_firefox" duration-ms="220888" started-at="2019-07-31T11:56:18Z" finished-at="2019-07-31T11:59:59Z">
+      <class name="Scripts.Luxire1main">
+        <test-method status="PASS" signature="openAppln(java.lang.String)[pri:0, instance:Scripts.Luxire1main@c39f790]" name="openAppln" is-config="true" duration-ms="44142" started-at="2019-07-31T17:28:41Z" finished-at="2019-07-31T17:29:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openAppln -->
+        <test-method status="PASS" signature="testValidLogin()[pri:0, instance:Scripts.Luxire1main@c39f790]" name="testValidLogin" duration-ms="21891" started-at="2019-07-31T17:29:25Z" finished-at="2019-07-31T17:29:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidLogin -->
+        <test-method status="PASS" signature="close_App(org.testng.ITestResult)[pri:0, instance:Scripts.Luxire1main@c39f790]" name="close_App" is-config="true" duration-ms="12143" started-at="2019-07-31T17:29:47Z" finished-at="2019-07-31T17:29:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testValidLogin status=SUCCESS method=Luxire1main.testValidLogin()[pri:0, instance:Scripts.Luxire1main@c39f790] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close_App -->
+      </class> <!-- Scripts.Luxire1main -->
+      <class name="Scripts.Luxire2main">
+        <test-method status="PASS" signature="openAppln(java.lang.String)[pri:0, instance:Scripts.Luxire2main@224aed64]" name="openAppln" is-config="true" duration-ms="36064" started-at="2019-07-31T17:27:19Z" finished-at="2019-07-31T17:27:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openAppln -->
+        <test-method status="FAIL" signature="testLuxire2()[pri:0, instance:Scripts.Luxire2main@224aed64]" name="testLuxire2" duration-ms="1147" started-at="2019-07-31T17:27:55Z" finished-at="2019-07-31T17:27:56Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[TypeError: rect is undefined
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'DESKTOP-KTDCJLP', ip: '192.168.15.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_20-ea'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190717172542, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 14552, moz:profile: C:\Users\Spandana\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0be41c04-0ca3-41d0-9b82-58ccdc3a74fd]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: TypeError: rect is undefined
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'DESKTOP-KTDCJLP', ip: '192.168.15.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_20-ea'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190717172542, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 14552, moz:profile: C:\Users\Spandana\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0be41c04-0ca3-41d0-9b82-58ccdc3a74fd
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:614)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:640)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:596)
+	at generics.Actions1.mouseoveraction(Actions1.java:21)
+	at POM.Luxire2.mouseoveraction(Luxire2.java:30)
+	at Scripts.Luxire2main.testLuxire2(Luxire2main.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLuxire2 -->
+        <test-method status="PASS" signature="close_App(org.testng.ITestResult)[pri:0, instance:Scripts.Luxire2main@224aed64]" name="close_App" is-config="true" duration-ms="44572" started-at="2019-07-31T17:27:56Z" finished-at="2019-07-31T17:28:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLuxire2 status=FAILURE method=Luxire2main.testLuxire2()[pri:0, instance:Scripts.Luxire2main@224aed64] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[testLuxire2]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- close_App -->
+      </class> <!-- Scripts.Luxire2main -->
+      <class name="Scripts.Validlogin$testValidlogin">
+        <test-method status="PASS" signature="openAppln(java.lang.String)[pri:0, instance:Scripts.Validlogin$testValidlogin@387c703b]" name="openAppln" is-config="true" duration-ms="38519" started-at="2019-07-31T17:26:18Z" finished-at="2019-07-31T17:26:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openAppln -->
+        <test-method status="FAIL" signature="testValidLogin()[pri:0, instance:Scripts.Validlogin$testValidlogin@387c703b]" name="testValidLogin" duration-ms="0" started-at="2019-07-31T17:26:57Z" finished-at="2019-07-31T17:26:57Z">
+          <exception class="java.lang.Error">
+            <message>
+              <![CDATA[Unresolved compilation problems: 
+	Workbook cannot be resolved to a type
+	WorkbookFactory cannot be resolved
+	Cell cannot be resolved to a type
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Error: Unresolved compilation problems: 
+	Workbook cannot be resolved to a type
+	WorkbookFactory cannot be resolved
+	Cell cannot be resolved to a type
+
+	at generics.Excel1.getcellvalue(Excel1.java:17)
+	at Scripts.Validlogin$testValidlogin.testValidLogin(Validlogin.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Error -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidLogin -->
+        <test-method status="PASS" signature="close_App(org.testng.ITestResult)[pri:0, instance:Scripts.Validlogin$testValidlogin@387c703b]" name="close_App" is-config="true" duration-ms="22393" started-at="2019-07-31T17:26:57Z" finished-at="2019-07-31T17:27:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testValidLogin status=FAILURE method=Validlogin$testValidlogin.testValidLogin()[pri:0, instance:Scripts.Validlogin$testValidlogin@387c703b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[testValidLogin]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- close_App -->
+      </class> <!-- Scripts.Validlogin$testValidlogin -->
+    </test> <!-- Test_firefox -->
+  </suite> <!-- Suite -->
+</testng-results>
